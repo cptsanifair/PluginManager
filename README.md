@@ -1,23 +1,12 @@
-<h1 name="readme-top">PluginManager</h1>
-<p align="center">
-    <img src="https://img.shields.io/github/v/release/aljawaid/PluginManager?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
-    <img src="https://img.shields.io/github/downloads/aljawaid/PluginManager/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
-    <img src="https://img.shields.io/github/directory-file-count/aljawaid/PluginManager?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
-    <img src="https://img.shields.io/github/repo-size/aljawaid/PluginManager?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
-    <img src="https://img.shields.io/github/languages/code-size/aljawaid/PluginManager?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
-</p>
-<p align="center">
-    <img src="https://img.shields.io/github/discussions/aljawaid/PluginManager?style=for-the-badge&color=blue" alt="GitHub Discussions" title="GitHub Discussions">
-    <img src="https://img.shields.io/github/commits-since/aljawaid/PluginManager/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
-    <img src="https://img.shields.io/github/commit-activity/m/aljawaid/PluginManager?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
-    <a href="https://github.com/kanboard/kanboard" title="Kanboard - Kanban Project Management Software"><img src="https://img.shields.io/badge/Plugin%20for-kanboard-D40000?style=for-the-badge" alt="Kanboard"></a>
-</p>
+# Plugin Manager
+
+#### _Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_
 
 Replace the Installed Plugins section with a whole new interface. Plugin Manager provides both users and developers with an improved comprehensive layout displaying a new section for troubleshooting plugins with a new plugin structure breakdown for each plugin. Install plugins direct from the Plugin Directory or explore new upcoming or untested features from manual plugins.
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
-## Features
+Features
+-------------
 
 - All plugins, installed and available are now sorted alphabetically
 - Add `Back to Top` and `Bottom` buttons for easier screen navigation with smooth scrolling effect
@@ -48,14 +37,16 @@ Replace the Installed Plugins section with a whole new interface. Plugin Manager
   - Show if plugin has database changes
   - Show if plugin contains template or model overrides
   - Show if plugin uses hooks
-  - Show when the plugin was last updated using _Time Ago_ relative dates
-    - Show relative date with exact date in tooltip (toggles to the exact date when clicked)
+  - Show when the plugin was last updated
+    - [Time Ago Relative Dates _- 51 translatable calculations_](../master/time-ago.md "View table of calculations")
+    - Show relative date with exact date in tooltip (toggles to exact date when clicked)
   - _Plugin structures are extracted through new properties in the Kanboard Plugins Directory_
-- Show directory source e.g. official or custom including the URL of the source
+- Show Directory source e.g. official or custom
+  - Show url of plugins directory
 - Show available plugins count
 - Show external weblink for official directory
 - Show current application version
-- Show direct link for each plugin Readme file (if available)
+- Show icon for Readme file if set
 - Searchable user friendly filter for quickly finding available plugins
     - Hover over input box to focus without clicking
 - Highlight last updated dates to reflect the development activity of a plugin
@@ -75,12 +66,13 @@ Replace the Installed Plugins section with a whole new interface. Plugin Manager
 
 **Plugin Problems**
 - A page dedicated to common issues with plugins and how to resolve them
-- Integration with [KanboardSupport](https://github.com/aljawaid/KanboardSupport) plugin to display technical information
+- Integration with [KanboardSupport](https://github.com/aljawaid/KanboardSupport) plugin (if installed) to display technical information
 - Useful links to further troubleshoot plugin issues all in one place
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
-## Screenshots
+Screenshots
+----------
+
 
 **Plugin Manager**
 
@@ -101,9 +93,9 @@ Replace the Installed Plugins section with a whole new interface. Plugin Manager
 
 **_[More screenshots](../master/screenshots.md)_**
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
-## Usage
+Usage
+-------------
 
 Go to `Plugins`
 
@@ -111,42 +103,65 @@ Go to `Plugins`
 
 `Settings` &#10562; `Plugin Manager`
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
-## Installation & Compatibility
-
-<details>
-    <summary><strong>Installation</strong></summary>
-
-- Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
-- Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
-
-</details>
-<details>
-    <summary><strong>Compatibility</strong></summary>
+Compatibility
+-------------
 
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 - PHP Compatibility [![PHP 7.0 ](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-7.0.yaml/badge.svg?branch=master&event=push)](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-7.0.yaml) [![PHP 7.4 ](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-7.4.yaml/badge.svg?branch=master&event=push)](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-7.4.yaml) [![PHP 8.0 ](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-8.0.yaml/badge.svg?branch=master&event=push)](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-8.0.yaml) [![PHP 8.2 ](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-8.2.yaml/badge.svg?branch=master&event=push)](https://github.com/aljawaid/PluginManager/actions/workflows/php-compatibility-8.2.yaml)
-- **Other Plugins & Action Plugins**
-  - _No known issues_
-  - Compatible with [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Glancer](https://github.com/aljawaid/Glancer), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
-  - Other plugins can use the `'template:plugin:sidebar'` hook after installing PluginManager
-- **Core Files & Templates**
-  - `03` Template override
-  - _No database changes_
 
-</details>
-<details>
-    <summary><strong>Translations</strong></summary>
+#### Other Plugins & Action Plugins
+- _No known issues_
+- Compatible with [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Glancer](https://github.com/aljawaid/Glancer), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
+- Other plugins can use the `'template:plugin:sidebar'` hook after installing PluginManager
+#### Core Files & Templates
+- `03` Template overrides
+- _No database changes_
+
+
+Changelog
+---------
+
+Read the full [**Changelog**](../master/changelog.md "See changes")
+ 
+
+Installation
+------------
+
+- **Install via the [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
+  - _Go to:_
+    - Kanboard: `Plugins` &#10562; `Plugin Directory`
+
+**_or_**
+
+- **Install via the [Releases](../master/Releases/ "A copy of each release is saved in the folder") folder**
+  - A copy of each release is saved in the `/Releases` folder of the repository
+  - Simply extract the `.zip` file into the `/plugins` directory
+
+**_or_**
+
+- **Install via [GitHub](https://github.com/aljawaid "Find the correct plugin from the list of repositories")**
+  - Download the `.zip` file and decompress everything under the directory `/plugins`
+  - The folder inside the `.zip` must not contain any branch names and must be exact case (matching the plugin name)
+
+_Note: The `/plugins` folder is case-sensitive._
+
+**_or_**
+
+- **Install using Git CLI**
+  - `git clone` (_or ftp upload_) and extract the `.zip` file into this folder: `.\plugins\` (must be exact case)
+
+
+Translations
+------------
 
 - English (UK)
-- _Starter template available_
+- _Contributors welcome_
+- _Translation starter template included_
 
-</details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
-
-## Authors & Contributors
+Authors & Contributors
+----------------------
 
 - [@aljawaid](https://github.com/aljawaid) - Author
 - [Alfred Bühler](https://github.com/alfredbuehler) - Contributor
@@ -154,11 +169,7 @@ Go to `Plugins`
 - [Captain Sanifair](https://github.com/cptsanifair) - Contributor
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
-## License
-
+License
+-------
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
-
-<a name="readme-bottom"></a>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
